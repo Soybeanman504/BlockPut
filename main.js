@@ -1,7 +1,8 @@
 ﻿// JavaScript source code
 window.onload = function () {
-    var canvas = document.getElementById('block');
-	var block = new Block(canvas, 16, 16);
+	var canvas = document.getElementById('block');
+	var bodyRect = document.body.getBoundingClientRect();
+	var block = new Block(canvas, Math.floor(bodyRect.width / 64), Math.ceil(bodyRect.height / 64));
 
 	no_scroll();
     block.main();

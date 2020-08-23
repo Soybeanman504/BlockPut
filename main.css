@@ -3,9 +3,14 @@
     padding:0;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
 canvas#block {
-    width: 100vmin;
-    height: 100vmin;
+    width: 100vw;
+    height: auto;
     image-rendering: pixelated; /* Crome */
     image-rendering: -moz-crisp-edges; /* Firefox */
     image-rendering: crisp-edges;
